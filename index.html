@@ -1,4 +1,5 @@
 <html>
+ <head>
 <title>Buy and Sell Bitcoin</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -6,6 +7,8 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ </head>
+ <body>
 <style>
  html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
 .mySlides {display:none}
@@ -35,7 +38,39 @@
   </div>
 </div>
 
-
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div class="tradingview-widget-container__widget"></div>
+  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com" rel="noopener" target="_blank"><span class="blue-text">Quotes</span></a> by TradingView</div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-tickers.js" async>
+  {
+  "symbols": [
+    {
+      "title": "S&P 500",
+      "proName": "INDEX:SPX"
+    },
+    {
+      "title": "Shanghai Composite",
+      "proName": "INDEX:XLY0"
+    },
+    {
+      "title": "EUR/USD",
+      "proName": "FX_IDC:EURUSD"
+    },
+    {
+      "title": "BTC/USD",
+      "proName": "BITFINEX:BTCUSD"
+    },
+    {
+      "title": "ETH/USD",
+      "proName": "BITFINEX:ETHUSD"
+    }
+  ],
+  "locale": "en"
+}
+  </script>
+</div>
+<!-- TradingView Widget END -->
  
 <!-- Content -->
 <div class="w3-content" style="max-width:1100px;margin-top:80px;margin-bottom:80px">
